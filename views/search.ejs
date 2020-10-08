@@ -1,6 +1,22 @@
-<h1>Search for a Movie</h1>
+<%- include ('./partials/header') %>
 
-<form action="/results" method="GET">
-	<input type="text" placeholder="search term" name="search">
-	<input type="submit">
-</form>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container text-center">
+    	<h1 class="">Simple <br> Movie Search</h1>
+    	<p class="lead">Search Page</p>
+	</div>
+</div>
+
+<div class='container text-center'>
+	<form action='/results' method='GET'>	
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">Movie Title</span>
+			</div>
+				<input type="text" name='search' class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+				<input type='submit' class='btn btn-dark ml-3'>
+		</div>
+	</form>
+</div>
+	
+<%- include ('./partials/footer') %>
