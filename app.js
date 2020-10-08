@@ -21,8 +21,8 @@ app.get("/results", function(req, res){
 	}); 
 }); 
 
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+  console.log("Movie App Has Started!");
+});
 
-
-app.listen(3000, function(){
-	console.log("Movie App has started!");
-}); 
